@@ -1,0 +1,17 @@
+{{yield}}
+<article class="listing">
+  <a {{action 'toggleImageSize'}} class="{{if isWide "wide"}}">
+    <img src="{{pro.image}}" alt="{{pro.name}} image" />
+    <small>View larger</small>
+  </a>
+  <h3>{{pro.name}}</h3>
+  <div class="detail desc">
+    <span>About: </span>{{pro.desc}}
+  </div>
+  <div class="detail price">
+    <span>Price: </span>{{pro.price}}<span> zł</span>
+  </div>
+  <div class="detail availability">
+    <span>Currently </span>{{product-available pro.availability}}
+  </div>
+</article>
