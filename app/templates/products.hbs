@@ -6,11 +6,4 @@
     About me
   {{/link-to}}
 </div>
-
-{{#list-filter filter=(action 'filterByName') as |prods|}}
-  <ul class="result">
-  {{#each prods as |productUnit|}}
-    <li>{{product-listing pro=productUnit}}</li>
-  {{/each}}
-  </ul>
-{{/list-filter}}
+{{outlet}}

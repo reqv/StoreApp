@@ -1,0 +1,13 @@
+<div class="jumbo show-listing">
+  <h3 class="title">{{model.name}}</h3>{{#link-to 'products'}}*back to products*{{/link-to}}
+  <div class="right detail-section">
+    <div class="detail price">
+      <strong>Price:</strong> {{model.price}}
+    </div>
+    <div class="detail">
+      <strong>How many in stack: </strong> {{model.availability}}
+    </div>
+    <p class="description">{{model.desc}}</p>
+  </div>
+  <img src="{{model.image}}" class="rental-pic">
+</div>

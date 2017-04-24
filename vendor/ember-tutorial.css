@@ -224,7 +224,8 @@ p {
 }
 
 .listing a.image.wide {
-    max-width: 100%;
+    width: 100%;
+    max-width: 50px;
     position: relative;
     z-index: 999;
 }
@@ -232,7 +233,11 @@ p {
 .listing .wide img {
     height: initial;
     width: 100%;
-    margin-bottom: 30px;
+    max-width: 500px;
+    top: 0px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 2;
 }
 
 .listing .wide small {

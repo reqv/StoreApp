@@ -45,4 +45,8 @@ export default function() {
       return { data: productsU};
     }
   });
+
+  this.get('products/:id', (db, request)=>{
+    return {data: productsU.find((productsU)=> request.params.id === productsU.id)};
+  });
 }
