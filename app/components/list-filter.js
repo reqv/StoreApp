@@ -8,7 +8,9 @@ export default Ember.Component.extend({
     this.get('filter')('').then((results) => this.set('results', results));
 
   },
-
+  didRender(){
+    Ember.debug("did render...");
+  },
   actions: {
     handleFilterEntry(){
       let filterInputValue = this.get('value');

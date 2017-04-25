@@ -9,6 +9,7 @@ export default Ember.Route.extend({
       let _whatLinkNext = this.controller.get('whatLinkNext');
       let link = document.getElementById('test-link');
       _whatLinkNext++;
+      Ember.debug(`To jest nowa zmienna ${_whatLinkNext}`);
       if(_whatLinkNext === 1){
         link.href = "http://www.wp.pl";
       }
@@ -21,7 +22,7 @@ export default Ember.Route.extend({
       this.controller.set('whatLinkNext',_whatLinkNext);
     }
   },
-  setupController(){
+  setupController(controller){
     //alert("Uważaj na tą stronę, trwają tu różne eksperymenta!");
   }
 });

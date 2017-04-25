@@ -14,6 +14,8 @@ Router.map(function() {
   });
   this.route('testing');
   this.route('product');
+  this.route('not-found',{path:'/*path'});
+  this.route('loading');
 });
 
 export default Router;
